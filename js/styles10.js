@@ -189,3 +189,15 @@ $(".acedit_info").click(function(){
     $(".wenhaoBox .whb-inner").find(".whb-content.ac_info").addClass("active");
     $(".wenhaoBox .whb-inner").find(".whb-content.ac_info").siblings().removeClass("active");
 });
+
+
+// my sample
+$(".sample-delete").click(function(){
+    $(this).parents(".pic-box").remove();
+})
+$(".mysample-cross").click(function(){
+    $(".mysample").fadeOut(300);
+})
+$(".num_inner-sample").click(function(){
+    $(".mysample").fadeIn(300);
+})
