@@ -201,3 +201,16 @@ $(".mysample-cross").click(function(){
 $(".num_inner-sample").click(function(){
     $(".mysample").fadeIn(300);
 })
+
+// scrolldown
+$(window).on("scroll resize",function(){
+    if($(window).scrollTop()>0){
+        $(".header-product-main").addClass("active");
+        $(".header-fixed").addClass("active");
+        $("header.header-fixed .togglebar").addClass("fixed");
+    }else {
+        $(".header-product-main").removeClass("active");
+        $(".header-fixed").removeClass("active");
+        $("header.header-fixed .togglebar").removeClass("fixed");
+    }
+})

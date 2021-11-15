@@ -12,6 +12,35 @@ body {
     text-align: justify;
 } */
 
+/* header */
+.header-fixed {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0;
+    transition: 0.3s;
+}
+
+.header-fixed.active {
+    height: 70px;
+}
+
+.header-fixed.active  a.logo {
+    top: 20%;
+}
+
+header a.logo {
+    transition: 0.3s;
+}
+
+.header-fixed.active .num-box {
+    top: 17px;
+}
+
+.header-product-main.active .num-box {
+    top: 17px;
+}
+
+
 /* quality */
 .quality {
     justify-content: space-between;
@@ -262,10 +291,12 @@ body {
 
 /* header sample&order */
 header .num-box {
-    position: fixed;
+    /* position: fixed; */
+    position: absolute;
     align-items: center;
     right: 12%;
     top: 35px;
+    transition: 0.3s;
 }
 
 header .num_inner {
@@ -283,6 +314,8 @@ header .num_inner>span {
     font-weight: 900;
     margin-right: 8px;
     display: block;
+    font-family: "Frutiger LT 45 Light";
+    font-size: 15px;
 }
 
 header .num_inner .num {
@@ -434,8 +467,9 @@ header .num_inner .num .notify-box span {
     padding: 15px 0;
     border-top: 1px solid #9FA0A0;
     border-bottom: 1px solid #9FA0A0;
-    min-height: 400px;
-    max-height: 550px;
+    /* min-height: 400px; */
+    /* max-height: 550px; */
+    max-height: 400px;
     overflow-y: auto;
 }
 
@@ -712,10 +746,10 @@ footer .xs.em .inner {
     header .num_inner .num>span {
         font-size: 13px;
     }
-    .mysample-content {
+    /* .mysample-content {
         min-height: 320px;
         max-height: 480px;
-    }
+    } */
     .mysample-content .pic-box {
         padding: 0 5px;
         margin: 5px 0;
@@ -758,15 +792,15 @@ footer .xs.em .inner {
     footer .xs.em .inner {
         font-size: 12px;
     }
-    .mysample-content {
+    /* .mysample-content {
         min-height: 250px;
         max-height: 400px;
-    }
+    } */
 }
 
 @media screen and (max-width:350px) {
-    .mysample-content {
+    /* .mysample-content {
         min-height: 250px;
         max-height: 330px;
-    }
+    } */
 }
