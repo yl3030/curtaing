@@ -584,32 +584,7 @@ div::-webkit-scrollbar {
   
   
   input{font-family:"Frutiger LT 45 Light";}
-  /* 定制页结算 */
-  .pay{
-      display: none;
-      position: relative;width: 100%;
-      padding:30px 0 0 0;
-      margin-top:50px;
-      border-top: 2px solid #000;
-      /*border-bottom: 2px solid #000;*/
-  }
-  .pay .pbtn, .thankyoupage .pbtn{display: block;float: right;width: 180px;padding:10px;border:1px solid #808080;background: #fff;text-align: center;font-family:"DIN-BoldAlternate";cursor: pointer;}
-  .pay .pbtn a, .thankyoupage .pbtn a{color: #000;}
-  .pay .pmoney{
-      position: relative;
-      width: 100%;
-      font-size: 14px;
-      line-height: 26px;
-      margin-bottom: 25px;
-  }
-  .pmoney-l{position: relative;width: 100%;text-align: right;}
-  .pay .pmoney .pmoney-l strong{font-family:"DIN-MediumAlternate";font-weight: normal;font-size: 15px;min-width: 130px;}
-  .pay .pmoney span{padding-right:10px;display: inline-block;min-width: 75px;font-size: 16px;}
-  
-  .pay .pbtn,.pay .pbtn a, .thankyoupage .pbtn, .thankyoupage .pbtn a{-webkit-transition:0.5s ease;}
-  .pay .pbtn:hover, .thankyoupage .pbtn:hover {border:1px solid #000;background: #000;color: #fff;}
-  .pay .pbtn:hover a, .thankyoupage .pbtn:hover a {color: #fff;}
-  .pay.active{display: block;}
+
   
   
   /* 定制页点击后 */
