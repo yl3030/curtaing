@@ -234,7 +234,7 @@ body {
   }
   
   .works_text {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
   }
   
@@ -296,6 +296,7 @@ body {
     /* font-weight: 900; */
     margin-bottom: 5px;
     display: block;
+    font-size: 15px;
   }
   
   .new-subscribe form .input-mail {
@@ -327,7 +328,8 @@ body {
     /* position: fixed; */
     position: absolute;
     align-items: center;
-    right: 12%;
+    /* right: 12%; */
+    right: 15%;
     top: 40px;
     transition: 0.3s;
   }
@@ -384,9 +386,11 @@ body {
   
   header .num_inner .num > span {
     color: #3d4543;
-    font-size: 13px;
+    font-size: 12px;
     display: block;
-    margin-top: 1px;
+    margin-top: 2px;
+    margin: 0;
+    font-weight: 300;
   }
   
   header .num_inner .num .notify {
@@ -448,7 +452,7 @@ body {
   }
   
   .get-sample {
-    padding: 20px 0;
+    padding: 20px 0 10px;
     margin-top: -10px;
   }
   
@@ -523,6 +527,10 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
   }
+
+  .mysample-content::-webkit-scrollbar {
+    display: none;
+  }
   
   .mysample-content .inner {
     flex-wrap: wrap;
@@ -536,8 +544,8 @@ body {
   }
   
   .mysample-content .pic-box {
-    /* width: 33.3333%; */
-    width: 160px;
+    width: 33.3333%;
+    /* width: 160px; */
     padding: 0 10px;
     margin: 10px 0;
   }
@@ -561,6 +569,31 @@ body {
     top: 5px;
     right: 5px;
     cursor: pointer;
+  }
+
+  .mysample-content .pic .rcc {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.35);
+    margin: 0;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .mysample-content .pic .rcc p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    padding: 5px;
+    width: 100%;
+    text-align: right;
+  }
+
+  .mysample-content .pic:hover .rcc {
+    opacity: 1;
   }
   
   .mysample .checkout {
@@ -728,6 +761,13 @@ body {
       width: auto;
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    footer .yqlink {
+      right: 45px;
+    }
+    
+  }
   
   @media screen and (max-width: 900px) {
     .new-subscribe .order {
@@ -760,7 +800,7 @@ body {
   
   @media screen and (max-width: 768px) {
     .text.ss1a {
-      padding: 30px 0 0;
+      padding: 70px 0 0;
     }
     .Simplicity .container {
         padding-left: 0;
@@ -768,7 +808,7 @@ body {
     }
     .Simplicity ul.list-box li {
         width: 25%;
-        padding: 1%;
+        padding: 2px;
         margin: 0;
     }
     .quality-left {
@@ -811,10 +851,9 @@ body {
       padding: 5px 30px;
     }
     .product-left ul.list-box {
-        /* margin-left: -3%; */
-        /* margin-right: -3%; */
-        margin-right: -2%;
-        margin-left: -1%;
+        margin-left: 0;
+        /* margin-left: -2px; */
+        /* margin-right: -2px; */
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -850,7 +889,11 @@ body {
         letter-spacing: -0.5px;
     }
     .get-sample button {
-      margin-top: 0;
+      margin-top: 10px;
+    }
+    .home-section {
+      padding-top: 0;
+
     }
   }
   
@@ -901,7 +944,7 @@ body {
       padding: 0 0 20px 0;
     }
     .get-sample p {
-      font-size: 13px;
+      /* font-size: 13px; */
       line-height: 1;
       margin-bottom: 20px;
     }
@@ -927,16 +970,27 @@ body {
       margin-top: 1.7% !important;
       margin-bottom: 1.5% !important;
     }
-    
+    .mysample-content .pic .rcc p {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    .mysample-content .pic .rcc {
+      opacity: 1;
+    }
   }
   
   @media screen and (max-width: 530px) {
     .mysample-content {
       min-height: 48vw;
       max-height: 72vw;
+      /* max-height: 70vw; */
+      padding: 5px 0;
     }
     .mysample-content .pic-box {
       width: 33.3333%;
+    }
+    .mysample .checkout {
+      padding-top: 10px;
     }
   }
   
@@ -946,7 +1000,8 @@ body {
       width: 80%;
     }
     header .num-box {
-      top: 30px;
+      /* top: 30px; */
+      top: 35%;
       right: 14%;
     }
     header .num_inner {
@@ -962,6 +1017,7 @@ body {
     }
     header .num_inner .num > span {
       font-size: 12px;
+      margin-top: 0;
     }
     /* .mysample-content {
           min-height: 320px;
@@ -970,6 +1026,9 @@ body {
     .mysample-content .pic-box {
       padding: 0 5px;
       margin: 5px 0;
+    }
+    .mysample-content .inner {
+      margin: 0 -5px;
     }
   }
   
@@ -981,8 +1040,8 @@ body {
   
   @media screen and (max-width: 400px) {
     header a.logo {
-      width: 90px;
-      top: 35%;
+      width: 110px;
+      top: 30%;
     }
     header .togglebar {
       width: 30px;
@@ -1024,6 +1083,12 @@ body {
     }
     header .num_inner .num .notify-order {
         right: -50px;
+    }
+    .mysample-content .pic .sample-delete {
+      width: 15px;
+    }
+    .mysample-title p br {
+      display: none;
     }
   }
   

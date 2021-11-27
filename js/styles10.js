@@ -197,9 +197,11 @@ $(".sample-delete").click(function(){
 })
 $(".mysample-cross").click(function(){
     $(".mysample").fadeOut(300);
+    $("body").css("overflow","visible");
 })
 $(".num_inner-sample").click(function(){
     $(".mysample").fadeIn(300);
+    $("body").css("overflow","hidden");
 })
 
 // scrolldown
