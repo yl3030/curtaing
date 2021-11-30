@@ -28,7 +28,7 @@
             padding-top: 100px;
         }
         .range-all.xq .range {
-            top: 20px;
+            /* top: 20px; */
             left: 2%;
         }
         .productsDetails .m .mp {
@@ -602,11 +602,23 @@
     </div>
 
 
-    <div class="range-all xq">
-      <ul class="range">
+    <div class="range-all xq--">
+      <!-- <ul class="range">
         <a href="/curtains">CURTAINS</a
         ><a href="/sheers">SHEERS</a>
+      </ul> -->
+      <h5 class="active">CURTAINS</h5>
+      <ul class="range">
+        <li class="" onclick="window.location.href='/curtains/rangef'" style="cursor:pointer;">F</li>
+        <li class="" onclick="window.location.href='/curtains/ranger'" style="cursor:pointer;">R</li>
+        <li class="active" onclick="window.location.href='/curtains/rangez'" style="cursor:pointer;">Z</li>
+        <li class="" onclick="window.location.href='/curtains/rangev'" style="cursor:pointer;">V</li>
+        <li class="" onclick="window.location.href='/curtains/rangex'" style="cursor:pointer;">X</li>
+        <li class="" onclick="window.location.href='/curtains/rangem'" style="cursor:pointer;">M</li>
+        <li class="" onclick="window.location.href='/curtains/rangen'" style="cursor:pointer;">N</li>
+        <li class="" onclick="window.location.href='/curtains/rangek'" style="cursor:pointer;">K</li>
       </ul>
+      <h5><a href="/sheers">SHEERS</a></h5>
     </div>
     <div class="productsDetails pde">
       <div class="pd-box">
@@ -721,7 +733,7 @@
             </div>
           </div>
           <div class="get-sample">
-              <p>Linings & tracks are exclusive, available on the Order Page.</p>
+              <p>Linings & tracks are exclusive, available on Order Page.</p>
               <button class="btn-getsample">GET A SAMPLE</button>
           </div>
           <style>

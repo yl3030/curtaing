@@ -192,17 +192,43 @@ $(".acedit_info").click(function(){
 
 
 // my sample
+let open_num = 0;
 $(".sample-delete").click(function(){
     $(this).parents(".pic-box").remove();
 })
 $(".mysample-cross").click(function(){
     $(".mysample").fadeOut(300);
     $("body").css("overflow","visible");
+    $("body").css("-webkit-overflow-scrolling","");
+    open_num = 0;
 })
 $(".num_inner-sample").click(function(){
     $(".mysample").fadeIn(300);
     $("body").css("overflow","hidden");
+    $("body").css("-webkit-overflow-scrolling","hidden");
+    open_num = 1;
 })
+
+
+// $("body").on('touchmove',function(e){
+//     if(open_num == 1) {
+//         e.preventDefault(); 
+//     }
+// }, { passive: false })
+
+// document.body.addEventListener('touchmove', function (e) {
+//     if(open_num == 1) {
+//         e.preventDefault(); 
+//     }
+// }, { passive: false });
+
+// let sample = document.getElementsByClassName("mysample-content");
+// sample.removeEventListener('touchmove', function (e) {
+//     e.preventDefault(); 
+// }, false);
+
+
+
 
 // scrolldown
 $(window).on("scroll resize",function(){
